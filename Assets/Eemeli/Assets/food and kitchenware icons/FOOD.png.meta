@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -11600,17 +11600,17 @@ TextureImporter:
       FOOD_181: 157946513
       FOOD_39: 1324003318
       FOOD_92: 1494166316
-      FOOD_129: -169608743
-      FOOD_266: 1108640436
-      FOOD_204: -472620785
       FOOD_278: 1125962402
-      FOOD_213: 123044597
+      FOOD_266: 1108640436
+      FOOD_129: -169608743
+      FOOD_265: -1141695116
+      FOOD_204: -472620785
       FOOD_396: 883109555
       FOOD_35: 1548384330
       FOOD_110: -1307768226
+      FOOD_213: 123044597
       FOOD_8: -492611343
       FOOD_471: -1853587590
-      FOOD_265: -1141695116
       FOOD_188: -160608540
       FOOD_294: 1607387633
       FOOD_245: -898647124
@@ -11675,13 +11675,13 @@ TextureImporter:
       FOOD_319: 232931012
       FOOD_20: -896817172
       FOOD_137: -551610938
+      FOOD_401: -2142267184
       FOOD_236: 539197312
       FOOD_346: 1244134302
       FOOD_179: 1311815294
-      FOOD_401: -2142267184
+      FOOD_469: -2075861496
       FOOD_49: -1990234079
       FOOD_94: -854480802
-      FOOD_469: -2075861496
       FOOD_507: -1688500750
       FOOD_353: -2004007696
       FOOD_124: -1550475984
@@ -11840,9 +11840,9 @@ TextureImporter:
       FOOD_290: -1993195819
       FOOD_262: 1062459399
       FOOD_316: 770366169
-      FOOD_484: -1809324914
-      FOOD_412: -863715246
       FOOD_536: 787841140
+      FOOD_412: -863715246
+      FOOD_484: -1809324914
       FOOD_67: -723681825
       FOOD_360: -65963729
       FOOD_212: -1363505266
