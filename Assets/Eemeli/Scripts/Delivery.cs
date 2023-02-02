@@ -10,20 +10,29 @@ public class Delivery : MonoBehaviour
     bool isTriggered = false;
     private GameObject deliveryToRetrieve;
 
+    public bool HasPickedDelivery;
+
+    public GameObject targetSelf;
+
+    private void Start()
+    {
+        targetSelf = null;
+    }
 
     //Updating if player has entered to pickup area and pressed E
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isTriggered == true)
+        if (Input.GetKeyDown(KeyCode.E) && isTriggered == true && !HasPickedDelivery)
         {
             deliveryToRetrieve = GetRandomDeliveryLocation(deliveryList);
+            targetSelf = deliveryToRetrieve;
             Debug.Log(deliveryToRetrieve);
             deliveryToRetrieve.gameObject.SetActive(true);
+            HasPickedDelivery = true;
+
+            
         }
-        if (isTriggered == false)
-        {
-            deliveryToRetrieve.gameObject.SetActive(false);
-        }
+       
     }
     //If player enters the pick up area then istriggered is true
     private void OnTriggerEnter2D(Collider2D collision)
