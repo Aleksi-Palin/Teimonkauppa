@@ -12,15 +12,21 @@ public class Playermovement : MonoBehaviour
 
     private Rigidbody2D rigidBody;
 
+    private Animator anim;
+
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+
+        anim.SetFloat("Movex", vertical);
+        anim.SetFloat("MoveY", horizontal);
 
         rigidBody.velocity = new Vector2(horizontal * speed, vertical * speed);
     }
