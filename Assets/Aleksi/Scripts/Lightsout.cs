@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Lightsout : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class Lightsout : MonoBehaviour
     [Header("Losing canvas")]
     public GameObject LostGameCanvas;
 
-    public GameObject Lights;
+    public Volume LightVolume;
 
     public void Start()
     {
@@ -46,9 +47,10 @@ public class Lightsout : MonoBehaviour
         }
         if (LightsOn)
         {
-            Lights.SetActive(true);
+            
+            LightVolume.weight = 0f;
 
-            if(_lightsontime > 0 ) 
+            if (_lightsontime > 0 ) 
             {
                 _lightsontime -= Time.deltaTime;
             } 
@@ -63,9 +65,9 @@ public class Lightsout : MonoBehaviour
         }
         else
         {
-            Lights.SetActive(false);
-
-            if(_lightsofftime > 0 )
+            
+            LightVolume.weight = 1f;
+            if (_lightsofftime > 0 )
             {
                 _lightsofftime -= Time.deltaTime;
             }
